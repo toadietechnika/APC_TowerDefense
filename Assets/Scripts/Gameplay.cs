@@ -16,7 +16,7 @@ public class Gameplay : MonoBehaviour
     //Coroutines
     IEnumerator NewWave()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 100; i++)
         {
             yield return new WaitForSeconds(0.3f);
             GameObject _e = Instantiate(refEnemy, map.Waypoints[0], Quaternion.identity);
